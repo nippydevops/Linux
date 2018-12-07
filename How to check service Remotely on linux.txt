@@ -1,0 +1,8 @@
+for i in `cat test1`
+
+do 
+{
+echo "********************************************$i***************************************************"
+sshpass -p '<password>' ssh -t abc@$i "sudo /etc/init.d/httpd start
+}
+done
