@@ -1,0 +1,11 @@
+How to get first and fourth field in file /etc/passwd
+
+awk '{print $1,$4}'  /etc/passwd
+
+
+How to find find shell associated with user
+awk '{print $1,$4}' /etc/passwd
+
+
+
+
