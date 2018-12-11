@@ -1,0 +1,15 @@
+How to check a service if it is running or not if not running start it 
+
+
+#!/bin/bash
+service=elasticsearch
+
+if (( $(ps -ef | grep -v grep | grep $service | wc -l) > 0 ))
+then
+echo "$service is running!!!"
+else
+systemctl start elasticsearch
+fi
+
+
+Applocable for centos/redhat 7
